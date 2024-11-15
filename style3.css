@@ -1,0 +1,230 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo encabezado */
+h1, h2 {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Navbar */
+header {
+    background: #e63946;
+    padding: 10px 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #d62828;
+    border-radius: 5px;
+}
+
+/* Estilo de la sección principal */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección */
+.section-title {
+    color: #d9534f;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la tabla de nutrición */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.nutrition-table th, .nutrition-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.nutrition-table th {
+    background-color: #ffcc99;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.nutrition-table tr:nth-child(even) {
+    background-color: #ffe6cc;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.animated-image {
+    width: 30%;
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Sección del logo */
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Sección de Acerca de Nosotros */
+.about-section {
+    flex: 2;
+    text-align: center;
+}
+
+.about-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.about-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-section a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+/* Sección de Redes Sociales */
+.social-section {
+    flex: 1;
+    text-align: center;
+}
+
+.social-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #4fc3f7;
+    color: #4fc3f7;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background: #4fc3f7;
+    color: #111;
+}
+
+.facebook::before {
+    content: " " ;
+    background-image: url('facebook.jpg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;  /* Ajusta el tamaño según lo necesario */
+    height: 17px; /* Ajusta el tamaño según lo necesario */
+    display: inline-block;
+}
+
+.instagram::before {
+    content: "";
+    background-image: url('Instagram.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.tiktok::before {
+    content: "";
+    background-image: url('tiktok.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.twitter::before {
+    content: "";
+    background-image: url('x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+

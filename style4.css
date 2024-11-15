@@ -1,0 +1,293 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: #e63946;
+    padding: 10px 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #d62828;
+    border-radius: 5px;
+}
+
+/* Títulos */
+h1 {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #4B0082;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* Secciones animadas */
+.animated-section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e5e2dde1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Animación keyframes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Imágenes */
+.section-img {
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    max-width: 300px; /* Tamaño máximo para evitar que sean demasiado grandes */
+    height: 100px; /* Mantiene la proporción original */
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto dentro de las secciones */
+.animated-section p {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 1em;
+    color: #555;
+}
+
+.animated-section ul {
+    list-style-type: disc;
+    margin: 15px 20px;
+    text-align: left;
+}
+
+.animated-section ul li {
+    margin: 5px 0;
+}
+
+/* Espaciado entre secciones */
+.section-container {
+    margin: 30px 0;
+}
+
+/* Contenedor de imágenes y texto (para diseño más limpio) */
+.section-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.section-box img {
+    max-width: 45%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.section-box div {
+    max-width: 50%;
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c9302c;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .section-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-box img {
+        margin: 0 auto 15px;
+        max-width: 100%;
+    }
+
+    .section-box div {
+        max-width: 100%;
+    }
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Sección del logo */
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Sección de Acerca de Nosotros */
+.about-section {
+    flex: 2;
+    text-align: center;
+}
+
+.about-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.about-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-section a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+/* Sección de Redes Sociales */
+.social-section {
+    flex: 1;
+    text-align: center;
+}
+
+.social-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #4fc3f7;
+    color: #4fc3f7;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background: #4fc3f7;
+    color: #111;
+}
+
+.facebook::before {
+    content: " " ;
+    background-image: url('facebook.jpg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;  /* Ajusta el tamaño según lo necesario */
+    height: 17px; /* Ajusta el tamaño según lo necesario */
+    display: inline-block;
+}
+
+.instagram::before {
+    content: "";
+    background-image: url('Instagram.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.tiktok::before {
+    content: "";
+    background-image: url('tiktok.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.twitter::before {
+    content: "";
+    background-image: url('x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+

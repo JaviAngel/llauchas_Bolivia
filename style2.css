@@ -1,0 +1,233 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos para encabezados */
+h1, h2 {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Navbar */
+header {
+    background: #e63946;
+    padding: 10px 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #d62828;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+.content {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+/* Acompañamientos */
+.accompaniments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.accompaniment {
+    flex: 1 1 calc(33% - 20px);
+    min-width: 280px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fefefed3;
+    text-align: center; /* Para centrar texto y contenido */
+}
+
+.accompaniment:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.accompaniment img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block; /* Convierte la imagen en un bloque */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+.accompaniment h3 {
+    color: #2a9d8f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.accompaniment p {
+    text-align: justify;
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Sección del logo */
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Sección de Acerca de Nosotros */
+.about-section {
+    flex: 2;
+    text-align: center;
+}
+
+.about-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.about-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-section a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+/* Sección de Redes Sociales */
+.social-section {
+    flex: 1;
+    text-align: center;
+}
+
+.social-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #4fc3f7;
+    color: #4fc3f7;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background: #4fc3f7;
+    color: #111;
+}
+
+.facebook::before {
+    content: " " ;
+    background-image: url('facebook.jpg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;  /* Ajusta el tamaño según lo necesario */
+    height: 17px; /* Ajusta el tamaño según lo necesario */
+    display: inline-block;
+}
+
+.instagram::before {
+    content: "";
+    background-image: url('Instagram.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.tiktok::before {
+    content: "";
+    background-image: url('tiktok.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.twitter::before {
+    content: "";
+    background-image: url('x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
