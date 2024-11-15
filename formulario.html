@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta sobre las Llauchas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="width: 40%; margin: auto;">
+        <form action="enviar.html" method="get">
+            <table style="width: 100%; border: 1px solid #ddd; padding: 10px;">
+                <tr>
+                    <th colspan="2" style="background-color: #e97a0b; color: white; padding: 10px; text-align: center;">Encuesta sobre las Llauchas en Bolivia</th>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 10px;">
+                        <p>Por favor, dedique un momento a completar esta pequeña encuesta sobre las llauchas, su opinión y experiencias contribuirán a mejorar nuestra página web.</p>
+                        <div style="background-color: #f2f2f2; padding: 5px; text-align: center; font-weight: bold;">Datos Generales</div> <br>
+                        <label for="nombre"><strong>Nombre:</strong></label>
+                        <input type="text" id="nombre" name="nombre" required size="71" maxlength="15"> <br/><br/>
+
+                        <label for="fecha_nacimiento"><strong>Fecha de Nacimiento:</strong> </label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br/><br/>
+
+                        <label for="genero"><strong>Género:</strong></label>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label><br/><br/>
+
+                        <label for="departamento"><strong>País de dónde nos visita:</strong> </label>
+                        <select id="departamento" name="departamento" required>
+                            <option value="">Seleccione</option>
+                            <option value="LP">Bolivia</option>
+                            <option value="OR">Argentina</option>
+                            <option value="CB">Peru</option>
+                            <option value="SC">Colombia</option>
+                            <option value="PO">Ecuador</option>
+                            <option value="CH">Venezuela</option>
+                            <option value="TJ">Brasil</option>
+                            <option value="BE">Chile</option>
+                            <option value="PA">Mexico</option>
+                            <option value="CH">España</option>
+                            <option value="TJ">Estados Unidos</option>
+                            <option value="BE">Nicaragua</option>
+                            <option value="PA">Portugal</option>
+                            <option value="PA">Otro</option>
+                        </select><br/><br/>
+
+                        <label for="email"><strong>Email:</strong> </label>
+                        <input type="email" id="email" name="email" required size="73" maxlength="50"><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 10px;">
+                        <div style="background-color: #f2f2f2; padding: 5px; text-align: center; font-weight: bold;">Preguntas sobre las Llauchas</div>
+                        <br>
+                        
+                        <label for="frecuencia"><strong>¿Con qué frecuencia consume llauchas?</strong></label><br/>
+                        <input type="radio" id="frecuencia_diaria" name="frecuencia" value="diario">
+                        <label for="frecuencia_diaria">Diario</label>
+                        <input type="radio" id="frecuencia_semanal" name="frecuencia" value="semanal">
+                        <label for="frecuencia_semanal">Semanal</label>
+                        <input type="radio" id="frecuencia_mensual" name="frecuencia" value="mensual">
+                        <label for="frecuencia_mensual">Mensual</label>
+                        <input type="radio" id="frecuencia_rara" name="frecuencia" value="rara vez">
+                        <label for="frecuencia_rara">Rara vez</label><br/><br/>
+
+                        <label for="tipo_preferido"><strong>¿Qué tipo de llaucha prefiere?</strong></label><br/>
+                        <input type="radio" id="tipo_tradicional" name="tipo_preferido" value="tradicional">
+                        <label for="tipo_tradicional">Tradicional (solo queso)</label><br/>
+                        <input type="radio" id="tipo_aji" name="tipo_preferido" value="aji">
+                        <label for="tipo_aji">Con ají</label><br/>
+                        <input type="radio" id="tipo_personalizado" name="tipo_preferido" value="personalizado">
+                        <label for="tipo_personalizado">Personalizado (otros ingredientes)</label><br/>
+                        <input type="radio" id="tipo_otro" name="tipo_preferido" value="otro">
+                        <label for="tipo_otro">Otro</label><br/><br/>
+
+                        <label for="preferencias"><strong>¿Cuáles son sus acompañamientos favoritos al consumir llauchas?</strong></label><br/>
+                        <input type="checkbox" id="api" name="preferencias" value="api">
+                        <label for="api">Api</label><br/>
+                        <input type="checkbox" id="tojori" name="preferencias" value="tojori">
+                        <label for="tojori">Tojorí</label><br/>
+                        <input type="checkbox" id="cafe" name="preferencias" value="cafe">
+                        <label for="cafe">Café</label><br/>
+                        <input type="checkbox" id="ninguno" name="preferencias" value="ninguno">
+                        <label for="ninguno">Ninguno</label><br/><br/>
+
+                        <label for="preparacion"><strong>¿Alguna vez ha preparado llauchas en casa?</strong></label><br/>
+                        <input type="radio" id="si_preparacion" name="preparacion" value="si">
+                        <label for="si_preparacion">Sí</label>
+                        <input type="radio" id="no_preparacion" name="preparacion" value="no">
+                        <label for="no_preparacion">No</label><br/><br/>
+
+                        <label for="ingredientes"><strong>¿Cuáles ingredientes le parecen esenciales en una buena llaucha?</strong></label><br/>
+                        <textarea id="ingredientes" name="ingredientes" rows="4" cols="76" placeholder="Escriba aquí..."></textarea><br/><br/>
+
+                        <label for="opiniones"><strong>¿Qué significan las llauchas para usted en términos de cultura y tradición?</strong></label><br/>
+                        <textarea id="opiniones" name="opiniones" rows="4" cols="76" placeholder="Escriba aquí..."></textarea><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" style="padding: 10px; text-align: center;">
+                        <input type="submit" value="Enviar" class="btn btn-submit"/>
+                        <input type="reset" value="Borrar" class="btn btn-reset"/>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
